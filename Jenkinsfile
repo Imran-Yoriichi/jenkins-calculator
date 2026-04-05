@@ -4,7 +4,7 @@ pipeline {
     options {
         timestamps()
         timeout(time: 10, unit: 'MINUTES')
-        buildDiscarder(logRotator(numToKeepStr: '10'))
+        buildDiscarder(logRotator(numToKeepStr: '5'))
     }
 
     environment {
